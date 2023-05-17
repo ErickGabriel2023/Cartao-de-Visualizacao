@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    max-width: 1440px;
+    min-height: 300px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container__principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__imagem {
+    height: 450px;
+}
+
+.imagem_perfume {
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.container__conteudo {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 450px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+}
+
+.card-tag {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3rem;
+    font-size: 14px;
+}
+
+.card-header {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    line-height: 34px;
+    margin-top: 20px;
+}
+
+.card-desc {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.container__valores {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.valor_primario {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 33px;
+}
+
+.valor_segundario {
+    color: hsl(228, 12%, 48%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: line-through;
+    padding-left: 15px;
+}
+
+.botao {
+    background-color: hsl(158, 36%, 37%);
+    color: aliceblue;
+    font-family: 'Montserrat';
+    width: 15rem;
+    height: 3rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.botao svg {
+    margin-right: 0.4rem;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background-color: hsl(158, 37%, 45%);
+}
+
+@media (max-width: 600px) {
+    .container__principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__imagem {
+        height: 243px;
+    }
+
+    .imagem_perfume {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        width: 350px;
+        
+    }
+
+    .container__conteudo {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        width: 350px;
+        height: 390px;
+    }
+
+    .card-header {
+        margin-top: 15px;
+        line-height: 30px;
+    }
+
+    .card-desc {
+        margin-top: 15px;
+    }
+
+    .botao {
+        width: 18rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 350px) {
+    .container__principal {
+        height: 620px;
+    }
+
+    .container__imagem {
+        height: 195.91px;
+    }
+
+    .imagem_perfume {
+        width: 280px;
+    }
+
+    .container__conteudo {
+        width: 280px;
+    }
+
+    .card-header {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .card-desc {
+        margin-top: 10px;
+    }
+
+    .container__valores {
+        margin-top: 15px;
+    }
+
+    .botao {
+        width: 13.6rem;
+    }
+}
+
